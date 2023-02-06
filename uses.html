@@ -63,7 +63,7 @@
 </body>
 
 <script text="text/javascript">
-    fetch('gear_software.json')
+    fetch('./assets/gear_software.json')
     .then(res => res.json())
     .then((res) => {
         renderData(res);

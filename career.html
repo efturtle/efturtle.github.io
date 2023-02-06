@@ -53,7 +53,7 @@
     </footer>
 
     <script text="text/javascript">
-        fetch('experience.json')
+        fetch('./assets/experience.json')
         .then(res => res.json())
         .then((res) => {
             renderData(res);
