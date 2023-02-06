@@ -1,0 +1,178 @@
+{
+    "jobs": [
+        {
+            "company": "Dekep",
+            "github": false,
+            "freelance": false,
+            "couldIGetLetterOfApproval": true,
+            "dateStarted": "2021/09/01",
+            "dateEnded": "2022/11/01",
+            "technologies": [
+                "RestAPI",
+                "Laravel",
+                "Vue.js",
+                "AdminLTE",
+                "VueX",
+                "MySQL",
+                "AWS",
+                "Laravel Forge",
+                "Laravel Breeze",
+                "Bootstrap",
+                "Tailwind CSS",
+                "Git"
+            ],
+            "role": "Full Stack Developer",
+            "activities": [
+                "Planning",
+                "Database Design",
+                "Writing code",
+                "Scrum",
+                "Debugging",
+                "Testing",
+                "Setting up servers",
+                "Help clients with requirements"
+            ],
+            "repo": "https://github.com/efturtle"
+        },
+        {
+            "company": "Rya",
+            "freelance": true,
+            "github": true,
+            "couldIGetLetterOfApproval": true,
+            "dateStarted": "2022/04/01",
+            "dateEnded": "2022/06/29",
+            "technologies": [
+                "PHP",
+                "vue",
+                "Laravel",
+                "Tailwindcss",
+                "Vuex",
+                "Ubuntu Server",
+                "nginx",
+                "Git",
+                "v-svg-icons"
+            ],
+            "role": "Freelance Full Stack",
+            "activities": [
+                "Planning",
+                "Write code",
+                "Desing database",
+                "Help clients with requirements"
+            ],
+            "repo": "https://github.com/efturtle/rya-warehouse-api"
+        },
+        {
+            "company": "Weather check Side Project",
+            "freelance": false,
+            "github": true,
+            "about": "Software project to learn in depth Laravel Queues, Jobs and Crons",
+            "role": "backend dev",
+            "technologies": [
+                "PHP",
+                "Laravel",
+                "Queues and Jobs",
+                "API",
+                "RestAPI"
+            ],
+            "activities": [
+                "write code",
+                "utilize Openweather API"
+            ],
+            "repo": "https://github.com/efturtle/weather-app"
+        },
+        {
+            "company": "Aulox",
+            "freelance": false,
+            "github": false,
+            "dateStarted": "2021/07/01",
+            "dateEnded": "2021/08/01",
+            "technologies": [            
+                "RudderStack",
+                "botman.io",
+                "Baileys"    
+            ],
+            "role": "Investigation and Development",
+            "activities": [
+                "Documentation",
+                "Investigation",
+                "Tutorials",
+                "Presentations",
+                "Examples"
+            ],
+            "repo": "https://github.com/efturtle"
+        },
+        {
+            "company": "Fox Pos",
+            "freelance": true,
+            "github": false,
+            "couldIGetLetterOfApproval": true,
+            "dateStarted": "2021/06/21",
+            "dateEnded": "2021/08/21",
+            "technologies": [
+                "PHP",
+                "Bootstrap",
+                "MySQL",                
+                "JQuery",
+                "HTML",
+                "Ubuntu Server",
+                "Apache"
+            ],
+            "role": "Full Stack Developer",
+            "activities": [
+                "Planning",
+                "Write code",
+                "debug",
+                "Desing database"
+            ],
+            "repo": "https://github.com/efturtle"
+        },
+        {
+            "company": "Asociacion Norte de Veracruz",
+            "freelance": true,
+            "github": true,
+            "dateStarted": "2021/03/21",
+            "dateEnded": "2021/06/21",
+            "technologies": [
+                "PHP",
+                "Laravel",
+                "MySQL",
+                "NGINX",
+                "JQuery",
+                "Bootstrap css",
+                "Digital Ocean",
+                "Ubuntu Server"
+            ],
+            "role": "Full Stack Developer",
+            "activities": [
+                "Planning",
+                "Database Design",
+                "Write code",
+                "Server Configuration",
+                "Learn the framework on the Fly"
+            ],
+            "repo": "https://github.com/efturtle/clubanv"
+        },
+        {
+            "company": "Maneto Side Project",
+            "freelance": false,
+            "couldIGetLetterOfApproval": true,
+            "repo": "https://github.com/efturtle/cetitq",
+            "github": true,
+            "about": "Co-created a website for my highschool. A basic crud application for file storage created with PHP and MySQL",
+            "role": "Full Stack Developer",
+            "activities": [
+                "Get requirementes from client",
+                "Work with school for hosting",
+                "Writing code",
+                "Software and database design",
+                "debugging"
+            ],
+            "technologies": [
+                "PHP",
+                "MySQL",
+                "Bootstrap css",
+                "JQuery"
+            ]
+        }
+    ]
+}

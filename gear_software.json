@@ -1,0 +1,94 @@
+{
+    "gear": [
+        {
+            "description": "Laptop",
+            "brand": "Chuwi",
+            "model": "GemiBook Pro when on the go"
+        },
+        {
+            "description": "Keyboard",
+            "brand": "Logitech",
+            "model": "G915 TKL Brown Switches"
+        },
+        {
+            "description": "Mouse",
+            "brand": "Logitech",
+            "model": "G203"
+        },
+        {
+            "description": "Headset",
+            "brand": "Sony",
+            "model": "MDR-1000x"
+        },
+        {
+            "description": "Processor",
+            "brand": "AMD",
+            "model": "Ryzen 3"
+        },
+        {
+            "description": "GPU",
+            "brand": "AMD",
+            "model": "580 8GB"
+        },
+        {
+            "description": "Wifi 6E",
+            "brand": "",
+            "model": "AX210"
+        },
+        {
+            "description": "SSD",
+            "brand": "ADATA",
+            "model": "The blue one 500GB"
+        }
+    ],
+    "software": [
+        {
+            "useCase": "Coding",
+            "name": "Visual Studio Code",
+            "about": "Prefer to use this for coding as I like minimalism, the ease of switching themes and adding extensions",
+            "website": "https://code.visualstudio.com/"
+        },
+        {
+            "useCase": "Commands",
+            "name": "Windows Terminal",
+            "about": "Slapping this with Oh My Posh and we can get a more utilitary terminal and better looking",
+            "website": "https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701"
+        },
+        {
+            "useCase": "Browser",
+            "name": "Chrome",
+            "about": "Great for debugging, styling and also Lighthouse for performance and SEO",
+            "website": "https://www.google.com.mx/chrome/"
+        },
+        {
+            "useCase": "Video Calls",
+            "name": "Google Meet",
+            "about": "I use this for meetings as most people have access to it and google calendar works great",
+            "website": "https://apps.google.com/meet/"
+        },
+        {
+            "useCase": "Notes, tasks and writing Algorithms",
+            "name": "Notion",
+            "about": "For writing a list of software tasks in the day or to-dos in the office or just write down how to solve problems this is great, works good even on the free version ",
+            "website": "https://www.notion.so/"
+        },
+        {
+            "useCase": "theme",
+            "name": "Light Theme everywhere",
+            "about": "I think i'm not alone on this one but we sure are rare I am a developer that uses only light mode",
+            "website": ""
+        },
+        {
+            "useCase": "Database",
+            "name": "DBeaver Community",
+            "about": "Universal database tool",
+            "website": "https://dbeaver.io/"
+        },
+        {
+            "useCase": "Database for SQLite",
+            "name": "SQLiteBrowser",
+            "about": "Lightweight database tool for sqlite",
+            "website": "https://sqlitebrowser.org/"
+        }
+    ]
+}

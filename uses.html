@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>asd</title>
+</head>
+
+<body class="flex flex-col min-h-screen bg-gray-50">
+    <header class="bg-gray-200 w-full h-16">
+        <div class="flex items-center gap-4">
+            <a class="flex items-center" href="index.html">
+                <img src="./assets/banner.png" alt="banner" width="60" height="60">
+                efturtle
+            </a>
+            <a href="career.html">
+                Career
+            </a>
+            <a href="resume.html">
+                Resume
+            </a>
+            <a href="uses.html">
+                Uses
+            </a>
+        </div>
+    </header>
+
+    
+    <main class="mb-auto p-8 md:p-16">
+        <!-- Main Header -->
+        <p class="text-3xl text-center font-semibold text-sky-900">Gear and Software for dev</p>
+        
+        <div class="flex justify-between my-6">
+            <p class="text-2xl font-semibold text-sky-900">Gear</p>
+            <p>--.-</p>
+        </div>
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="gear">
+
+        </div>
+        <div class="flex justify-between my-6">
+            <p class="text-2xl font-semibold text-sky-900">Software</p>
+            <p>--.-</p>
+        </div>
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:pb-36" id="software">
+
+        </div>
+    </main>
+
+    <footer class="h-12 bg-sky-900 flex items-center gap-4 text-white p-3">
+        <a href="https://www.twitter.com/ef_turtle" target="__blank">
+            <i class="fa-brands fa-twitter"></i>
+            My Twitter
+        </a>
+        <a href="https://www.github.com/efturtle" target="__blank">
+            <i class="fa-brands fa-github"></i>
+            My Github
+        </a>
+    </footer>
+</body>
+
+<script text="text/javascript">
+    fetch('gear_software.json')
+    .then(res => res.json())
+    .then((res) => {
+        renderData(res);
+    });
+
+    function renderData (data){
+        let gearDivision = document.getElementById('gear');
+        let softwareDivision = document.getElementById('software');
+        data.gear.forEach((gear) => {
+            let row = `
+                <div>
+                    <p class="font-semibold text-sky-900">${gear.description}</p>
+                    <p class="text-sm italic">${gear.brand}</p>
+                    <p>${gear.model}</p>
+                </div>
+            `
+            gearDivision.innerHTML += row;
+        });
+        data.software.forEach((software) => {
+            let row = `
+                <div>
+                    <p class="font-semibold text-sky-900">${software.name}</p>
+                    <p class="text-sm italic">${software.useCase}</p>
+                    <p>${software.about}</p>
+                    <a class="text-blue-700 hover:text-blue-500" href="${software.website}" target="__blank"> ${software.website}</a>
+                </div>
+            `
+            softwareDivision.innerHTML += row;
+        });
+    }
+    
+</script>
+
+</html>
