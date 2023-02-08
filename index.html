@@ -89,52 +89,52 @@
             </div>
         </div>
         
-        <p class="text-lg md:text-xl text-center mb-7 text-sky-900 font-semibold">This is some of the code ive written</p>
+        <p class="text-lg md:text-xl text-center mb-7 text-sky-900 font-semibold">This is some of the code I've written</p>
 
         <div class="flex justify-center">
             <button class="text-xl text-sky-900 mx-3 hover:bg-sky-900 hover:text-white p-2 rounded-full"
                 onclick="goPreviousImage();">&larr;</button>
-			<input type="radio" name="programmingImage" onchange="updateImage('laravel');"/>
-			<input type="radio" name="programmingImage" onchange="updateImage('csharp');" />
-			<input type="radio" name="programmingImage" onchange="updateImage('vanillajs');" />
-			<input type="radio" name="programmingImage" onchange="updateImage('cpp');" />
-			<input type="radio" name="programmingImage" onchange="updateImage('git');" />
-			<input type="radio" name="programmingImage" onchange="updateImage('vuejs');" />
-			<input type="radio" name="programmingImage" onchange="updateImage('vuex');" />
+			<input type="radio" name="programmingImage" onchange="updateImage('laravel');" id="laravelRadio" checked autofocus/>
+			<input type="radio" name="programmingImage" onchange="updateImage('csharp');"  id="csharpRadio"/>
+			<input type="radio" name="programmingImage" onchange="updateImage('vanillajs');"  id="vanillajsRadio"/>
+			<input type="radio" name="programmingImage" onchange="updateImage('cpp');"  id="cppRadio"/>
+			<input type="radio" name="programmingImage" onchange="updateImage('git');"  id="gitRadio"/>
+			<input type="radio" name="programmingImage" onchange="updateImage('vuejs');"  id="vuejsRadio"/>
+			<input type="radio" name="programmingImage" onchange="updateImage('vuex');"  id="vuexRadio"/>
             <button class="text-xl text-sky-900 mx-3 hover:bg-sky-900 hover:text-white p-2 rounded-full"
                 onclick="goNextImage();">&rarr;</button>
 	    </div>
-        <p class="text-center sm:text-md texl-lg" id="programmingName">laravel</p>
+        <p class="text-center sm:text-md texl-lg capitalize" id="programmingName">laravel</p>
 
-        <div class="flex justify-center mx-2">
+        <div class="flex justify-center mx-2 mb-8">
             <!-- images -->
             <picture id="laravel">
-                <source type="image/avif" src="assets/programmingImages/laravel.avif" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
-                <img src="assets/programmingImages/laravel.jpg" alt="laravel" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+                <source type="image/avif" src="assets/programmingImages/laravel.avif" class="scale-100 hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+                <img src="assets/programmingImages/laravel.jpg" alt="laravel" class="scale-100 hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
             </picture>
             <picture id="csharp" hidden>
-                <source type="image/avif" src="assets/programmingImages/csharp.avif" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
-                <img src="assets/programmingImages/csharp.jpg" alt="csharp" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+                <source type="image/avif" src="assets/programmingImages/csharp.avif" class="scale-100 hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+                <img src="assets/programmingImages/csharp.jpg" alt="csharp" class="scale-100 hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
             </picture>
             <picture id="vanillajs" hidden>
-                <source type="image/avif" src="assets/programmingImages/vanillajs.avif" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
-                <img src="assets/programmingImages/vanillajs.jpg" alt="vanillajs" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+                <source type="image/avif" src="assets/programmingImages/vanillajs.avif" class="scale-100 hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+                <img src="assets/programmingImages/vanillajs.jpg" alt="vanillajs" class="scale-100 hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
             </picture>
             <picture id="cpp" hidden>
-                <source type="image/avif" src="assets/programmingImages/cpp.avif" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
-                <img src="assets/programmingImages/cpp.jpg" alt="cpp" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+                <source type="image/avif" src="assets/programmingImages/cpp.avif" class="scale-100 hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+                <img src="assets/programmingImages/cpp.jpg" alt="cpp" class="scale-100 hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
             </picture>
             <picture id="git" hidden>
-                <source type="image/avif" src="assets/programmingImages/git.avif" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
-                <img src="assets/programmingImages/git.jpg" alt="git" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+                <source type="image/avif" src="assets/programmingImages/git.avif" class="scale-100 hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+                <img src="assets/programmingImages/git.jpg" alt="git" class="scale-100 hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
             </picture>
             <picture id="vuejs" hidden>
-                <source type="image/avif" src="assets/programmingImages/vuejs.avif" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
-                <img src="assets/programmingImages/vuejs.jpg" alt="vuejs" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+                <source type="image/avif" src="assets/programmingImages/vuejs.avif" class="scale-100 hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+                <img src="assets/programmingImages/vuejs.jpg" alt="vuejs" class="scale-100 hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
             </picture>
             <picture id="vuex" hidden>
-                <source type="image/avif" src="assets/programmingImages/vuex.avif" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
-                <img src="assets/programmingImages/vuex.jpg" alt="vuex" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+                <source type="image/avif" src="assets/programmingImages/vuex.avif" class="scale-100 hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+                <img src="assets/programmingImages/vuex.jpg" alt="vuex" class="scale-100 hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
             </picture>
         </div>
 
@@ -169,6 +169,11 @@
 
         // set history for previous
         previousImage = description;
+
+
+        // update radio button to checked
+        let nameRadio = document.getElementById(`${previousImage}Radio`);
+        nameRadio.checked = true;
     }
 
     function goPreviousImage(){
