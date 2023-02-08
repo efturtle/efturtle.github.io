@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio Alberto Cuevas Home</title>
 </head>
 
 <body class="flex flex-col min-h-screen bg-gray-50">
+
     <header class="bg-gray-200 w-full h-16">
         <div class="flex items-center gap-4">
             <a class="flex items-center" href="#">
@@ -29,13 +32,14 @@
         </div>
     </header>
 
-    
+
     <main class="mb-auto">
         <!-- Main Header -->
         <div class="p-5 bg-gradient-to-r from-teal-700 to-fuchsia-700 ">
 
             <div class="grid sm:grid-cols-1 md:grid-cols-2 justify-items-center">
-                <img src="https://avatars.githubusercontent.com/u/46721097?v=4" alt="Avatar" class="rounded-full h-52 w-52 md:h-72 md:w-72">
+                <img src="https://avatars.githubusercontent.com/u/46721097?v=4" alt="Avatar"
+                    class="rounded-full h-52 w-52 md:h-72 md:w-72">
 
                 <div class="text-white md:text-lg m-auto">
                     <p>Alberto Cuevas</p>
@@ -43,16 +47,15 @@
                     <p>Full Stack Developer based out of Guadalajara Jalisco, Mexico</p>
                 </div>
             </div>
+
         </div>
 
         <!-- Content -->
         <div class="m-5 ">
             <p class="lg:text-xl md:mx-24 text-center mb-10">
-                A web developer and clean code advocate, I currently work at Ayuntamiento de Zapopan. 
+                A web developer and clean code advocate, I currently work at Ayuntamiento de Zapopan.
                 Hoping I make lives a bit easier with my work
             </p>
-
-            <!-- <p>I love learning about new tech and try new things to better solve software problems</p> -->
 
             <div class="grid sm:grid-cols-1 md:grid-cols-2 justify-items-center">
                 <div class="lg:text-xl mb-5">
@@ -65,6 +68,7 @@
                         <li><i class="fa-solid fa-server"></i> SQL</li>
                     </ul>
                 </div>
+
                 <div class="lg:text-xl mb-5">
                     <p class="mb-4">and open source tools and libraries like:</p>
                     <ul class="grid grid-cols-2 justify-items-start gap-2">
@@ -73,13 +77,65 @@
                         <li><i class="fa-brands fa-laravel"></i> Laravel</li>
                         <li><i class="fa-brands fa-vuejs"></i> Vue.js</li>
                         <li><i class="fa-brands fa-bootstrap"></i> Bootstrap</li>
-                        <li><span class="inline-flex"><img src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.79614a5f61617ba49a0891494521226b.svg" class="self-center w-5 h-5 rounded-full mx-1"> </span> Tailwind CSS</li>
-                        <li class=""><span class="inline-flex "><img src="./assets/jquery.png" class="self-center w-5 h-5 rounded-full"> </span> JQuery </li>
+                        <li><span class="inline-flex"><img
+                                    src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.79614a5f61617ba49a0891494521226b.svg"
+                                    class="self-center w-5 h-5 rounded-full mx-1"> </span> Tailwind CSS</li>
+                        <li class=""><span class="inline-flex "><img src="./assets/jquery.png"
+                                    class="self-center w-5 h-5 rounded-full"> </span> JQuery </li>
                         <li>And much much more</li>
                     </ul>
                 </div>
-                
+
             </div>
+        </div>
+        
+        <p class="text-lg md:text-xl text-center mb-7 text-sky-900 font-semibold">This is some of the code ive written</p>
+
+        <div class="flex justify-center">
+            <button class="text-xl text-sky-900 mx-3 hover:bg-sky-900 hover:text-white p-2 rounded-full"
+                onclick="goPreviousImage();">&larr;</button>
+			<input type="radio" name="programmingImage" onchange="updateImage('laravel');"/>
+			<input type="radio" name="programmingImage" onchange="updateImage('csharp');" />
+			<input type="radio" name="programmingImage" onchange="updateImage('vanillajs');" />
+			<input type="radio" name="programmingImage" onchange="updateImage('cpp');" />
+			<input type="radio" name="programmingImage" onchange="updateImage('git');" />
+			<input type="radio" name="programmingImage" onchange="updateImage('vuejs');" />
+			<input type="radio" name="programmingImage" onchange="updateImage('vuex');" />
+            <button class="text-xl text-sky-900 mx-3 hover:bg-sky-900 hover:text-white p-2 rounded-full"
+                onclick="goNextImage();">&rarr;</button>
+	    </div>
+        <p class="text-center sm:text-md texl-lg" id="programmingName">laravel</p>
+
+        <div class="flex justify-center mx-2">
+            <!-- images -->
+            <picture id="laravel">
+                <source type="image/avif" src="assets/programmingImages/laravel.avif" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+                <img src="assets/programmingImages/laravel.jpg" alt="laravel" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+            </picture>
+            <picture id="csharp" hidden>
+                <source type="image/avif" src="assets/programmingImages/csharp.avif" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+                <img src="assets/programmingImages/csharp.jpg" alt="csharp" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+            </picture>
+            <picture id="vanillajs" hidden>
+                <source type="image/avif" src="assets/programmingImages/vanillajs.avif" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+                <img src="assets/programmingImages/vanillajs.jpg" alt="vanillajs" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+            </picture>
+            <picture id="cpp" hidden>
+                <source type="image/avif" src="assets/programmingImages/cpp.avif" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+                <img src="assets/programmingImages/cpp.jpg" alt="cpp" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+            </picture>
+            <picture id="git" hidden>
+                <source type="image/avif" src="assets/programmingImages/git.avif" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+                <img src="assets/programmingImages/git.jpg" alt="git" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+            </picture>
+            <picture id="vuejs" hidden>
+                <source type="image/avif" src="assets/programmingImages/vuejs.avif" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+                <img src="assets/programmingImages/vuejs.jpg" alt="vuejs" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+            </picture>
+            <picture id="vuex" hidden>
+                <source type="image/avif" src="assets/programmingImages/vuex.avif" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+                <img src="assets/programmingImages/vuex.jpg" alt="vuex" class="scale-100 sm:hover:scale-110 md:hover:scale-125 ease-in duration-300" width="900px" height="600px">
+            </picture>
         </div>
 
     </main>
@@ -89,11 +145,56 @@
             <i class="fa-brands fa-twitter"></i>
             My Twitter
         </a>
+
         <a href="https://www.github.com/efturtle" target="__blank">
             <i class="fa-brands fa-github"></i>
             My Github
         </a>
+
     </footer>
 </body>
+
+<script>
+    var previousImage = 'laravel';
+    let programmingNamesArr = ['laravel', 'csharp', 'vanillajs', 'cpp', 'git', 'vuejs', 'vuex'];
+
+    function updateImage(description){
+        // hide the previous image first
+        previousImage = document.getElementById(previousImage);
+        previousImage.hidden = true;
+
+        let imageElement = document.getElementById(description);
+        document.getElementById('programmingName').innerHTML = description;
+        imageElement.hidden = false;
+
+        // set history for previous
+        previousImage = description;
+    }
+
+    function goPreviousImage(){
+        // go to last image if it's the first
+        if(previousImage == programmingNamesArr[0]){
+            updateImage(programmingNamesArr[programmingNamesArr.length - 1]);
+            return;
+        }
+
+        let previousImageIndex = programmingNamesArr.findIndex(x => x == previousImage);
+        updateImage(programmingNamesArr[previousImageIndex - 1]);
+
+    }
+
+    function goNextImage(){
+        // go to first if image is the last
+        if(previousImage == programmingNamesArr[programmingNamesArr.length - 1]){
+            updateImage(programmingNamesArr[0]);
+            return;
+        }
+        
+        let previousImageIndex = programmingNamesArr.findIndex(x => x == previousImage);
+        updateImage(programmingNamesArr[previousImageIndex + 1])
+
+    }
+
+</script>
 
 </html>

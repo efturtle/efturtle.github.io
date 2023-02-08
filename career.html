@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Portfolio Alberto Cuevas Career</title>
 </head>
 
@@ -29,10 +31,10 @@
         </div>
     </header>
 
-    
+
     <main class="mb-auto">
         <!-- Content -->
-        <div class="m-5  md:m-20">            
+        <div class="m-5  md:m-20">
             <div class="grid sm:grid-cols-1 md:grid-cols-2 gap-4" id="experience">
 
             </div>
@@ -52,31 +54,32 @@
         </a>
     </footer>
 
-    <script text="text/javascript">
-        fetch('./assets/experience.json')
+    
+</body>
+
+<script text="text/javascript">
+    fetch('./assets/experience.json')
         .then(res => res.json())
         .then((res) => {
             renderData(res);
         });
-    
-        function renderData (data){
-            let experienceDiv = document.getElementById('experience');
-            data.jobs.forEach((job) => {
-                let row = `
-                    <div class="drop-shadow-md bg-white p-6 px-4 md:p-7 md:px-12">
-                        <p class="font-semibold">${job.company}</p>
-                        <p class="font-light">${job.dateStarted ?? ''} - ${job.dateEnded ?? ''}</p>
-                        <p class="font-light mb-2">Role: ${job.role}</p>
-                        <p class="text-left mb-2">Tech I Worked with: <span class="font-light text-xs">${job.technologies.toString()}</span> </p>
-                        <p class="text-left mt-2 mb-2">Activities: <span class="font-light text-xs">${job.activities.toString()}</span> </p>
-                    </div>
-                `;
-                experienceDiv.innerHTML += row;
-            });
-        }
-        
-    </script>
 
-</body>
+    function renderData(data) {
+        let experienceDiv = document.getElementById('experience');
+        data.jobs.forEach((job) => {
+            let row = `
+                <div class="drop-shadow-md bg-white p-6 px-4 md:p-7 md:px-12">
+                    <p class="font-semibold">${job.company}</p>
+                    <p class="font-light">${job.dateStarted ?? ''} - ${job.dateEnded ?? ''}</p>
+                    <p class="font-light mb-2">Role: ${job.role}</p>
+                    <p class="text-left mb-2">Tech I Worked with: <span class="font-light text-xs">${job.technologies.toString()}</span> </p>
+                    <p class="text-left mt-2 mb-2">Activities: <span class="font-light text-xs">${job.activities.toString()}</span> </p>
+                </div>
+            `;
+            experienceDiv.innerHTML += row;
+        });
+    }
+
+</script>
 
 </html>
