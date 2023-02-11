@@ -1,6 +1,18 @@
 {
     "jobs": [
         {
+            "company": "Ayuntamiento de Zapopan",
+            "dateStarted": "2022/09/19",
+            "dateEnded": "working here",
+            "technologies": [
+                "ASP.NET MVC 6", "SQL Server", "JQuery", "Bootstrap css", "DataTables", "Python", "JavaScript"
+            ],
+            "role": "Desarrollador de Sistemas",
+            "activities": [
+                "Planning", "Debugging", "Writing code", "Figuring out current systems and re-write", "Assisting team mates"
+            ]
+        },
+        {
             "company": "Dekep",
             "github": false,
             "freelance": false,

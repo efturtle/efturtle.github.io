@@ -44,14 +44,19 @@
     </main>
 
     <footer class="h-12 bg-sky-900 flex items-center gap-4 text-white p-3">
-        <a href="https://www.twitter.com/ef_turtle" target="__blank">
-            <i class="fa-brands fa-twitter"></i>
-            My Twitter
+        <a href="linkedin.com/in/alberto-cuevas-efturtle" target="__blank">
+            <i class="fa-brands fa-linkedin"></i>
+            My LinkedIn
         </a>
         <a href="https://www.github.com/efturtle" target="__blank">
-            <i class="fa-brands fa-github"></i>
+            | <i class="fa-brands fa-github"></i>
             My Github
         </a>
+        <a href="https://github.com/efturtle/efturtle.github.io" target="__blank">
+            | This websites code
+            <i class="fa-brands fa-github-alt"></i>
+        </a>
+        <p>| efturtle</p>
     </footer>
 
     
@@ -67,13 +72,17 @@
     function renderData(data) {
         let experienceDiv = document.getElementById('experience');
         data.jobs.forEach((job) => {
+            let worPeriod = '';
+            if(job.dateStarted != undefined &&  job.dateEnded != undefined){
+                worPeriod = `${job.dateStarted} - ${job.dateEnded}`;
+            }
             let row = `
                 <div class="drop-shadow-md bg-white p-6 px-4 md:p-7 md:px-12">
-                    <p class="font-semibold">${job.company}</p>
-                    <p class="font-light">${job.dateStarted ?? ''} - ${job.dateEnded ?? ''}</p>
-                    <p class="font-light mb-2">Role: ${job.role}</p>
-                    <p class="text-left mb-2">Tech I Worked with: <span class="font-light text-xs">${job.technologies.toString()}</span> </p>
-                    <p class="text-left mt-2 mb-2">Activities: <span class="font-light text-xs">${job.activities.toString()}</span> </p>
+                    <p class="font-semibold text-sky-900">${job.company}</p>
+                    <p class="font-light">${worPeriod}</p>
+                    <p class="font-light mb-2 ">Role: ${job.role}</p>
+                    <p class="text-left mb-2">Work with: <span class="font-light text-xs">${ job.technologies.toString() }</span> </p>
+                    <p class="text-left mt-2 mb-2">Activities: <span class="font-light text-xs">${ job.activities.toString() }</span> </p>
                 </div>
             `;
             experienceDiv.innerHTML += row;
