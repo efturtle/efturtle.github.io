@@ -8,7 +8,7 @@
         {
             "description": "Keyboard",
             "brand": "Logitech",
-            "model": "G915 TKL Brown Switches"
+            "model": "NuPhy Air 75"
         },
         {
             "description": "Mouse",
@@ -50,8 +50,8 @@
         },
         {
             "useCase": "Commands",
-            "name": "Windows Terminal",
-            "about": "Slapping this with Oh My Posh and we can get a more utilitary terminal and better looking",
+            "name": "Windows Terminal with PowerShell 7",
+            "about": "Slapping this with Oh My Posh and we can get a more useful terminal and better looking. Also have created my own color scheme for terminal, I could not find a light theme terminal color scheme anywhere!",
             "website": "https://apps.microsoft.com/store/detail/windows-terminal/9N0DX20HK701"
         },
         {
