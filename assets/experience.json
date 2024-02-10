@@ -1,9 +1,21 @@
 {
     "jobs": [
         {
+            "company": "GlobalLogic",
+            "dateStarted": "2023/07/24",
+            "dateEnded": "working here",
+            "technologies":[
+                "PHP5, PHP7 & PHP8", "Xdebug", "Bash", "Regex", "SQL", "GIT & Github", "Jira", "Slack", "Docker", "Apache", "Ubuntu Server", "JQuery", "Bootstrap css"
+            ],
+            "role": "Software Engineer",
+            "activities":[
+                "Migration of legacy code to new code", "Working on bug tickets", "Debugging", "Writing php or bash scripts to help automate", "Assisting team mates", "Planning", "Helping with code reviews", "Administering servers"
+            ]
+        },
+        {
             "company": "Ayuntamiento de Zapopan",
             "dateStarted": "2022/09/19",
-            "dateEnded": "working here",
+            "dateEnded": "2022/07/20",
             "technologies": [
                 "ASP.NET MVC 6", "SQL Server", "JQuery", "Bootstrap css", "DataTables", "Python", "JavaScript"
             ],

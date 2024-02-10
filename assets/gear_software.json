@@ -2,8 +2,8 @@
     "gear": [
         {
             "description": "Laptop",
-            "brand": "Chuwi",
-            "model": "GemiBook Pro when on the go"
+            "brand": "Lenovo",
+            "model": ""
         },
         {
             "description": "Keyboard",
@@ -49,6 +49,12 @@
             "website": "https://code.visualstudio.com/"
         },
         {
+            "useCase": "Coding",
+            "name": "Github Copilot",
+            "about": "Using this to improve productivity when starting new side projects",
+            "website": "https://github.com/features/copilot"
+        },
+        {
             "useCase": "Commands",
             "name": "Windows Terminal with PowerShell 7",
             "about": "Slapping this with Oh My Posh and we can get a more useful terminal and better looking. Also have created my own color scheme for terminal, I could not find a light theme terminal color scheme anywhere!",
@@ -71,12 +77,6 @@
             "name": "Notion",
             "about": "For writing a list of software tasks in the day or to-dos in the office or just write down how to solve problems this is great, works good even on the free version ",
             "website": "https://www.notion.so/"
-        },
-        {
-            "useCase": "theme",
-            "name": "Light Theme everywhere",
-            "about": "I think i'm not alone on this one but we sure are rare I am a developer that uses only light mode",
-            "website": ""
         },
         {
             "useCase": "Database",
