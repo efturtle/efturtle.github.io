@@ -9,7 +9,7 @@
             ],
             "role": "Software Engineer",
             "activities":[
-                "We migrated tenants running on PHP 5 to PHP 8 by utilizing tools such as Bash, regex, and PHP. The migration involved consolidating client code into a single, unified repository for easier management.","Delivering new features as a full stack dev.", "Conducted regular 1-on-1 meetings with team members to provide guidance, address concerns, and support professional development.","Assisted in resolving P0 and P1 issues, ensuring prompt and effective solutions to critical problems."Created documentation for new features to ensure clear understanding and ease of use for the team and stakeholders."
+                "We migrated tenants running on PHP 5 to PHP 8 by utilizing tools such as Bash, regex, and PHP. The migration involved consolidating client code into a single, unified repository for easier management.","Delivering new features as a full stack dev.", "Conducted regular 1-on-1 meetings with team members to provide guidance, address concerns, and support professional development.","Assisted in resolving P0 and P1 issues, ensuring prompt and effective solutions to critical problems.","Created documentation for new features to ensure clear understanding and ease of use for the team and stakeholders."
             ]
         },
         {
