@@ -77,21 +77,31 @@
 
     function renderData(data) {
         let experienceDiv = document.getElementById('experience');
-        data.jobs.forEach((job) => {
-            let worPeriod = '';
+        data.jobs.forEach((job, index) => {
+            let workPeriod = '';
             if(job.dateStarted != undefined &&  job.dateEnded != undefined){
-                worPeriod = `${job.dateStarted} - ${job.dateEnded}`;
+                workPeriod = `${job.dateStarted} - ${job.dateEnded}`;
             }
             let row = `
                 <div class="drop-shadow-md bg-white p-6 px-4 md:p-7 md:px-12">
                     <p class="font-semibold text-sky-900">${job.company}</p>
-                    <p class="font-light">${worPeriod}</p>
+                    <p class="font-light">${workPeriod}</p>
                     <p class="font-light mb-2 ">Role: ${job.role}</p>
                     <p class="text-left mb-2">Work with: <span class="font-light text-xs">${ job.technologies.toString() }</span> </p>
-                    <p class="text-left mt-2 mb-2">Activities: <span class="font-light text-xs">${ job.activities.toString() }</span> </p>
+                    <ul id="activities${index}" class="list-inside list-disc px-1"> <p class="text-left mt-2 mb-2">Activities: </p> </ul>
                 </div>
-            `;
+                `;
             experienceDiv.innerHTML += row;
+            printActivitiesRow(job.activities, index);
+        });
+
+    }
+
+    function printActivitiesRow(activities, index){
+        let activitiesDiv = document.getElementById(`activities${index}`);
+
+        activities.forEach(activity => {
+            activitiesDiv.innerHTML += `<li class="font-light text-xs"> ${ activity } </li>`;
         });
     }
 
