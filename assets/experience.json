@@ -21,7 +21,7 @@
             ],
             "role": "Desarrollador de Sistemas",
             "activities": [
-                "Planning", "Debugging", "Writing code", "Figuring out current systems and re-write", "Assisting team mates"
+                "Analyze legacy code with product owners tk rebuild using ASP.NET MVC 6 and SQL Server", "Support other teams in delivering features across projects."
             ]
         },
         {
@@ -47,14 +47,7 @@
             ],
             "role": "Full Stack Developer",
             "activities": [
-                "Planning",
-                "Database Design",
-                "Writing code",
-                "Scrum",
-                "Debugging",
-                "Testing",
-                "Setting up servers",
-                "Help clients with requirements"
+                "Designed and implemented the database schema", "Developed core application models and business logic", "Created reusable and customizable components", "Set up and configured the production servers", "Managed deployment and ongoing maintenance"
             ],
             "repo": "https://github.com/efturtle"
         },
@@ -78,10 +71,7 @@
             ],
             "role": "Freelance Full Stack",
             "activities": [
-                "Planning",
-                "Write code",
-                "Desing database",
-                "Help clients with requirements"
+                "designed and developed a restful api", "Build authentication and authorization mechanisms", "Configured and deployed the server"
             ],
             "repo": "https://github.com/efturtle/rya-warehouse-api"
         },
