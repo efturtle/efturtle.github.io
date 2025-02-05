@@ -15,7 +15,7 @@
         {
             "company": "Ayuntamiento de Zapopan",
             "dateStarted": "2022/09/19",
-            "dateEnded": "2022/07/20",
+            "dateEnded": "2023/07/20",
             "technologies": [
                 "ASP.NET MVC 6", "SQL Server", "JQuery", "Bootstrap css", "DataTables", "Python", "JavaScript"
             ],
